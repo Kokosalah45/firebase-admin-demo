@@ -21,7 +21,7 @@ const db = {
 }
 
 
-
+    // TODO : DON'T FORGET TO ADD NEW CERT FROM FIREBASE 
  admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
   });
