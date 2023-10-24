@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+    <section>
+      <form id="signin-form" class="form">
+        <h3>Sign in</h3>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input required type="email" name="email" id="email">
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input required type="password" name="password" id="password">
+        </div>
+        <button type="submit">Signin</button>
+        <button type="button" id="signout" >SignOut</button>
+      </form>
+    </section>
+   <section style="height: 100vh; display: flex; flex-direction: column;">
+    <form id="user-crud-form" class="form">
+      <h3>Users CRUD</h3>
+      <div class="input-group">
+        <label for="newUser">User name</label>
+        <input required type="text" name="newUserName" id="newUser">
+      </div>
+      <div class="input-group">
+        <label for="userOccupation">User occupation</label>
+        <input required type="text" name="newUserOccupation" id="userOccupation">
+      </div>
+      <div class="input-group">
+        <label for="userAge">User age</label>
+        <input required type="number" name="newUserAge" id="userAge">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div>
+     <form  id="user-search-form" action="">
+
+      <h3>User Search</h3>
+      <div style="display: flex; gap : 0.5rem; justify-content: center; align-items: center;">
+        <label for="user-search">Search for User : 
+          <input required type="search" id="user-search" name="userId">
+        </label>
+        <button type="submit" id="user-search-btn">Search</button>
+      </div>
+     
+     </form>
+    </div>
+    <div style="height: 60vh; margin-top: 2rem;  overflow-y: auto;" id="users-list">
+      <div style="display: flex; justify-content: space-between; background-color: gray; padding : 1rem" >
+        <h3>UsersList</h3>
+        <button id="user-list-btn" style="background-color: black;">List</button>
+      </div>
+      <div id="user-result">
+      </div>
+    </div>
+   </section>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
