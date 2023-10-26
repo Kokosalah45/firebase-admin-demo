@@ -1,0 +1,19 @@
+{
+  "token": {
+    "scopes": [
+      "sessions.screens.interactions.read",
+      "sessions.screens.interactions.write"
+    ]
+  },
+  "iss": "https://securetoken.google.com/authz-test-43c1d",
+  "aud": "authz-test-43c1d",
+  "auth_time": 1698317698,
+  "uid": "953",
+  "sub": "953",
+  "iat": 1698317698,
+  "exp": 1698321298,
+  "firebase": {
+    "identities": {},
+    "sign_in_provider": "custom"
+  }
+}
